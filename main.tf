@@ -3,5 +3,5 @@ resource "aws_instance" "web01" {
   instance_type     = "t2.micro"
   tenancy           = "shared"
   vpc_id            = "a012b345kj24"
-  availability_zone = "us-east-1a"
+  availability_zone = "eu-west-2a"
 }
