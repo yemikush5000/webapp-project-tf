@@ -4,4 +4,5 @@ resource "aws_instance" "web01" {
   tenancy           = "shared"
   vpc_id            = "a012b345kj24"
   availability_zone = "eu-west-2a"
+  security_groups   = ["${aws_security_group.mygroup.id}"]
 }
