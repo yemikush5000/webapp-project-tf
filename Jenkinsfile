@@ -2,14 +2,14 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('build-general') {
             steps {
                 echo "building changes on permament branches"
             }
         }
-        stage('build') {
+        stage('build-on-feature1') {
             when {
-              branch = "feature1"
+              branch  "feature1"
             }
             steps {
                 echo "build changes in feature1 brnach"
